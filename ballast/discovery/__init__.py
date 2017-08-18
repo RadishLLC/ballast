@@ -1,5 +1,5 @@
 import abc
-from past.builtins import cmp
+from ballast.compat import cmp
 
 
 class Server(object):

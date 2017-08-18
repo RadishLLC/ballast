@@ -1,4 +1,4 @@
-from past.builtins import basestring, unicode
+from ballast.compat import basestring, unicode
 try:
     from urllib.parse import urlparse, urlunparse, urljoin, parse_qs, urlencode
 except ImportError:

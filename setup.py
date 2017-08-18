@@ -95,7 +95,7 @@ setup(name='ballast',
       include_package_data=True,
       setup_requires=['pytest-runner'],
       tests_require=['pytest', 'mock'],
-      install_requires=['requests', 'future'],
+      install_requires=['requests'],
       extras_require={
           'dns': ['dnspython'],
           'gevent': ['gevent'],

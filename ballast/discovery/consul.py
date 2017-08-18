@@ -1,6 +1,6 @@
 import logging
 import requests
-from past.builtins import unicode
+from ballast.compat import unicode
 from ballast.util import UrlBuilder
 from ballast.discovery import Server, ServerList
 
