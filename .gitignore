@@ -3,6 +3,7 @@
 *.iws
 *.pyc
 *.egg-info
+*.egg
 .eggs
 .coverage*
 
