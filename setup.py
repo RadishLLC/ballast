@@ -87,7 +87,7 @@ setup(name='ballast',
       maintainer='Justin Smith',
       maintainer_email='smith.justin.c@gmail.com',
       license='Apache License 2.0',
-      url='https://github.com/thomasstreet/ballast',
+      url='https://github.com/RadishLLC/ballast',
       packages=find_packages(exclude=['test', 'docs']),
       package_data={
           'ballast': ['../version.py', '../LICENSE'],
