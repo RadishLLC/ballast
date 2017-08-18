@@ -1,5 +1,5 @@
 import unittest
-from past.builtins import unicode
+from ballast.compat import unicode
 from ballast.util import UrlBuilder
 try:
     from urllib.parse import urlparse, parse_qs

@@ -1,6 +1,6 @@
 import unittest
 import mock
-from past.builtins import str
+from ballast.compat import unicode
 from requests import models
 from ballast.discovery.consul import ConsulRestRecordList
 try:
@@ -9,12 +9,13 @@ except ImportError:
     from urlparse import urlparse, parse_qs
 
 
-# past.builtins apparently not all that compatible...
+# string encoding not completely compatible
+# between python 2-3...
 def str_compat(s, encoding):
     try:
-        return str(s, encoding)
+        return unicode(s, encoding)
     except TypeError:
-        return str(s).encode(encoding)
+        return unicode(s).encode(encoding)
 
 
 _MOCK_RESPONSE = str_compat("""

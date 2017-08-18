@@ -1,5 +1,5 @@
 import logging
-from past.builtins import basestring
+from ballast.compat import basestring
 from ballast.discovery import Server, ServerList
 from ballast.exception import BallastException
 

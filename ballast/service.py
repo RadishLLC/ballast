@@ -1,6 +1,6 @@
 import logging
 import requests
-from past.builtins import basestring, unicode
+from ballast.compat import basestring, unicode
 from requests.exceptions import RequestException
 from ballast.util import UrlBuilder
 from ballast.core import LoadBalancer

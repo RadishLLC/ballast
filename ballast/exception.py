@@ -1,4 +1,4 @@
-from past.builtins import basestring
+from ballast.compat import basestring
 
 
 class BallastException(Exception):

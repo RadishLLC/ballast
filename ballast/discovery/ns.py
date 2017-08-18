@@ -1,7 +1,7 @@
 import abc
 import logging
 import socket
-from past.builtins import unicode
+from ballast.compat import unicode
 from ballast.exception import BallastException, BallastConfigurationException
 from ballast.discovery import ServerList, Server
 
