@@ -1,6 +1,6 @@
 import abc
 import threading
-from queue import Queue
+from ballast.compat import Queue
 from ballast.discovery import Server
 from ballast.exception import BallastException, NoReachableServers
 
