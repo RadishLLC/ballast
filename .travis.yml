@@ -18,7 +18,7 @@ notifications:
 deploy:
   - provider: pypi
     distributions: sdist bdist_wheel
-    server: https://testpypi.python.org/pypi
+    server: https://test.pypi.org/legacy/
     skip_cleanup: true
     skip_upload_docs: true
     user: radish
