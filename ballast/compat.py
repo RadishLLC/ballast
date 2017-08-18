@@ -9,6 +9,7 @@ PYPY = hasattr(sys, 'pypy_translation_info')
 
 
 if PY3:
+    from queue import Queue
 
     def cmp(x, y):
         """
@@ -24,8 +25,19 @@ if PY3:
     xrange = range
 else:
     import __builtin__
+    from Queue import Queue
     cmp = __builtin__.cmp
     unicode = __builtin__.unicode
     basestring = __builtin__.basestring
     unichr = __builtin__.unichr
     xrange = __builtin__.xrange
+
+
+__all__ = [
+    'Queue',
+    'cmp',
+    'unicode',
+    'basestring',
+    'unichr',
+    'xrange'
+]
